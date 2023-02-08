@@ -564,4 +564,55 @@ input:focus::placeholder {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
+}
+.site-footer .top-footer {
+  color: #fff;
+}
+.site-footer .top-footer .site-info {
+  width: 100%;
+}
+.site-footer .top-footer .site-info .title {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.site-footer .top-footer .site-info .info {
+  font-size: 13px;
+  font-weight: 400;
+}
+.site-footer .top-footer .site-info .info:not(:last-child) {
+  margin-bottom: 10px;
+}
+.site-footer .top-footer .site-info .info i, .site-footer .top-footer .site-info .info svg {
+  font-size: 12px;
+  margin-left: 3px;
+  color: #c70102;
+}
+.site-footer .top-footer .site-info .lists-hold {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.site-footer .top-footer .site-info .lists-hold .list-links .item .link {
+  padding: 10px 5px 10px 40px;
+  transition: 0.4s;
+  color: #fff;
+  display: block;
+}
+.site-footer .top-footer .site-info .lists-hold .list-links .item .link:not(:last-child) {
+  border-bottom: 1px solid rgba(93, 88, 88, 0.77);
+}
+.site-footer .top-footer .site-info .lists-hold .list-links .item .link i, .site-footer .top-footer .site-info .lists-hold .list-links .item .link svg {
+  margin-left: 5px;
+  color: #fff;
+}
+.site-footer .top-footer .site-info .lists-hold .list-links .item .link.active {
+  color: #c70102;
+}
+.site-footer .top-footer .site-info .lists-hold .list-links .item .link:hover {
+  color: #c70102;
+}
+.site-footer .bottom-footer {
+  border-top: 1px solid #434242;
 }/*# sourceMappingURL=main.css.map */

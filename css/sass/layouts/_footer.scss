@@ -40,4 +40,57 @@
       }
     }
   }
+  .top-footer {
+    color: $white-color;
+    .site-info {
+      width: 100%;
+      .title {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .info {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        font-size: 13px;
+        font-weight: 400;
+        i,svg {
+          font-size: 12px;
+          margin-left: 3px;
+          color: $main-color;
+        }
+      }
+      .lists-hold {
+        @include flex-between;
+        gap: 5px;
+        .list-links {
+          .item {
+            .link {
+              padding: 10px 5px 10px 40px;
+              &:not(:last-child) {
+                border-bottom: 1px solid rgb(93 88 88 / 77%);
+              }
+              transition: $main-transition;
+              color: $white-color;
+              display: block;
+              i,svg {
+                margin-left: 5px;
+                color: $white-color;
+              }
+              &.active {
+                color: $main-color;
+              }
+              &:hover {
+                color: $main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    border-top: 1px solid #434242;
+  }
 }
