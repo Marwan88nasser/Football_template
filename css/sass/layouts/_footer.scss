@@ -1,0 +1,43 @@
+.site-footer {
+  background-color: $footer-bg;
+  .contact {
+    border-bottom: 2px solid $main-color;
+    color: $white-color;
+    .contact-holder {
+      @include flex-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      .contact-options {
+        @include flex-between;
+        flex-grow: 1;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 45px;
+        .holder {
+          @include flex-center;
+          gap: 10px;
+          .holder-icon {
+            i,
+            svg {
+              font-size: 30px;
+            }
+          }
+          .holder-text {
+            display: flex;
+            flex-direction: column;
+            span {
+              font-size: 10px;
+            }
+            a, p {
+              display: block;
+              color: $white-color;
+              font-size: 18px;
+              font-weight: 500;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

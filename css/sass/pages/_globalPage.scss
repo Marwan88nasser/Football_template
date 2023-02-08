@@ -1,0 +1,104 @@
+* {
+  @include reset-all;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  color: $main-text-color;
+}
+// reset Ul
+ul {
+  @include reset-ul;
+}
+// reset Link
+a {
+  @include a-reset;
+}
+// reset btn
+button {
+  border: none;
+  outline: none;
+}
+// Reset Input
+input:focus,
+select:focus {
+  outline: none;
+}
+// custom Input
+input {
+  direction: rtl !important;
+  &:focus::placeholder {
+    opacity: 0;
+    transition: $sm-transition;
+  }
+}
+
+// Start Player Info
+.player-info {
+  background-image: url("../images/bg-1.png");
+  background-repeat: no-repeat;
+  background-color: #121214;
+  background-position: top center;
+  .player-img {
+    @include full-w-h;
+    img {
+      @include set-cover-img;
+    }
+  }
+  .box-info {
+    background-color: #0a0a0c;
+    padding: 40px 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .content-text {
+      .title {
+        color: $main-color;
+        font-weight: 600;
+        margin-bottom: 13px;
+        font-size: 17px;
+      }
+      .des {
+        color: $white-color;
+        line-height: 1.9;
+        font-size: 13px;
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+// End Player Info
+// Start packages
+.packages {
+  background-image: url("../images/bg-2.png");
+  background-size: cover;
+}
+// End packages
+// Start news
+.news {
+  background-color: $bg-section-main;
+}
+// End news
+// Start features
+.features {
+  background-color: $bg-section-alt;
+  .img-holder {
+    img {
+      width: 575px;
+      height: 400px;
+      max-width: 100%;
+    }
+  }
+}
+// End features
+// Start Videos
+.videos {
+  background-color: $bg-section-main;
+}
+// End Videos

@@ -1,0 +1,21 @@
+.btn-join {
+  background-color: $main-color;
+  color: $white-color;
+  border-radius: 2px;
+  padding: 8px 40px;
+  transition: $main-transition;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.btn-sub {
+  background-color: $main-color;
+  color: $white-color;
+  border-radius: 40px;
+  padding: 6px 35px;
+  transition: $main-transition;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
